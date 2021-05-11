@@ -102,11 +102,12 @@ class TestLinearLayout(context: Context) : LinearLayout(context) {
     val textView: AppCompatTextView
 
     init {
+        id = R.id.test_linear_layout_id
+
         gravity = Gravity.CENTER
         orientation = VERTICAL
 
         textView = AppCompatTextView(context)
-        textView.id = R.id.text_view_id
         addView(textView)
 
         button = MaterialButton(context)
